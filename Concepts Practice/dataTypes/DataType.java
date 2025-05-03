@@ -10,7 +10,7 @@ public class DataType{
 
     float fltVal = 56.245f;
 
-    double dbleVal = 25.23547;
+    double dbleVal = 25.235475854;
 
     char chrVal = 'A';
 
