@@ -8,6 +8,9 @@ public class StringMethods {
 		
 		String str2 = "              K I N G                    ";
 		
+		String str3 = "sun god";
+		String str4 = "Sun God";
+		
 		System.out.println("str1: " + str1);
 		System.out.println("str2: " + str2 + "\n");
 		
@@ -40,6 +43,25 @@ public class StringMethods {
 		
 		String trmStr = str2.trim();
 		System.out.println("Trimmed String: " + trmStr + "\n");
+		
+		boolean sameStr = str3.equals(str4);
+		System.out.println("Is str3 and str4 same(case sensitive): " + sameStr + "\n");
+		
+		boolean sameStrIgnoreCase = str3.equals(str4);
+		System.out.println("Is str3 and str4 same(ignore case): " + sameStrIgnoreCase + "\n");
+		
+		String newStr1 = str1.substring(11);
+		System.out.println("Sub string of str1(only start index): " + newStr1 + "\n");
+		
+		String newStr2 = str1.substring(8,11);
+		System.out.println("Sub string of str1(start index & end index): " + newStr2 + "\n");
+		
+		String charReplacedStr = str1.replace('m', '$');
+		System.out.println("Character replaced String of str1: " + charReplacedStr + "\n");
+		
+		String wordReplacedStr = str2.replace("KING", "Jack Of All Trades");
+		System.out.println("Word replaced String of str2: " + wordReplacedStr + "\n");
+		
 	}
 	
 }
